@@ -9,7 +9,6 @@ function InputLogin(props) {
   let history = useHistory();
 
   const validateDocument = () => {
-    console.log(value, "value")
     if (value.document === "23346753859") {
       return false
     }

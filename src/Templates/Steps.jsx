@@ -2,7 +2,11 @@ import React, { Component } from "react";
 import "../App.css";
 
 export const Step = (props) => {
-  return <div key={props.num}>{props.useCase(props)}</div>;
+  console.log(props,  "Props");
+  if (props) {
+    return <div key={props?.num}>{props?.useCase(props)}</div>;
+  }
+  return <div>loading</div>
 };
 
 class Steps extends Component {
