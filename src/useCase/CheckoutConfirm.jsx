@@ -1,13 +1,14 @@
 import React from "react";
+import { useHistory } from 'react-router-dom';
 import Checkout from "../Templates/Checkout";
 
 function CheckoutConfirm(props) {
-  const onSubmit = (e) => {
-    props.setTransactionState({
-      ...props.transactionState,
-      amount: e,
-    });
-    props.handleClick();
+  let history = useHistory();
+  const onSubmit = () => {
+    history.push({
+      pathname: "/receipt",
+      state: props.transactionState 
+    })
   };
   return (
     <Checkout
@@ -15,7 +16,9 @@ function CheckoutConfirm(props) {
       phone={props.transactionState.phone}
       amount={props.transactionState.amount}
       onCancel={() => {
-        console.log("cancelou");
+        history.push({
+          pathname: "/",
+        });
       }}
       onEdit={(key) => {
         props.setNum(key);

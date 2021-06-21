@@ -6,7 +6,8 @@ export default function Input({ onChange, placeholder, value }) {
       className="Input"
       onChange={onChange}
       placeholder={placeholder}
-      value={value}
+      defaultValue={value}
+      autoFocus={true}
     />
   );
 }

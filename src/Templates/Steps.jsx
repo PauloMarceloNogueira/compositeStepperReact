@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Button from "../Component/Button";
 import "../App.css";
 
 export const Step = (props) => {

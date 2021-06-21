@@ -3,8 +3,7 @@ import Input from "../Component/Input";
 import Button from "../Component/Button";
 import TemplateTitle from "../Component/TemplateTitle"
 import "../App.css";
-export default function InputCellphone({ onSubmit, state }) {
-  console.log(state)
+export default function InputCardNumber({ onSubmit, state }) {
   const [value, setValue] = useState("");
   return (
     <div
@@ -15,13 +14,13 @@ export default function InputCellphone({ onSubmit, state }) {
         alignItems: "flex-start",        
       }}
     >
-      <TemplateTitle>Qual o celular irá receber a recarga?</TemplateTitle>
+      <TemplateTitle>Qual o número do cartão?</TemplateTitle>
       <Input
         onChange={(e) => {
           setValue(e.target.value);
         }}
-        placeholder={"(00) 00000-0000"}
-        value={state?.phone}
+        placeholder={"000000000-0"}
+        value={state?.cardNumber}
       />
       <Button
         disabled={!!value.length ? false : true}

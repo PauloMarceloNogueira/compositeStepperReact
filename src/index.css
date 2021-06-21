@@ -7,14 +7,99 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+textarea:focus, input:focus{
+  outline: none;
+}
+
+input::placeholder {
+  color: #A3AFD1;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
+.Input {
+  border: none;
+  flex: 1;
+  justify-content: center;
+  align-items: flex-start;
+  padding-bottom: 32px;
+  font-size: 28px;
+  color: #1B2852;
+}
+
+.GhostButtons {
+  color: #006BEE;
+  font-weight: bold;
+  border: none;
+  background-color: transparent;
+}
+
 .Buttons {
-  border-radius: 28px;
+  width: 280px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.Buttons-Home {
   width: 56px;
   height: 56px;
-  margin-left: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  border: 1px solid #D9DFF8;
+  border-radius: 50%;
+  background-color:#FFF;
+}
+
+.bg-blue {
+  background-color: #030096;
+}
+
+.bg-petroleum {
+  background-color: #1B2852;
+}
+.color-petroleum {
+  color: #1B2852;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.color-grey {
+  color:#69769B
+}
+
+.button-disabled {
+  opacity: .5;
+}
+
+.font-size-14 {
+  font-size: 14px;
+}
+
+.font-size-16 {
+  font-size: 16px;
+}
+
+.font-size-12 {
+  font-size: 12px;
+}
+
+.font-size-18 {
+  font-size: 18px;
+}
+
+.font-size-24 {
+  font-size: 24px;
 }

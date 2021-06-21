@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import Input from "../Component/Input";
 import Button from "../Component/Button";
 import "../App.css";
-export default function InputAmount({ onSubmit }) {
+import TemplateTitle from '../Component/TemplateTitle';
+export default function InputAmount({ onSubmit, state }) {
   const [value, setValue] = useState(0);
+  console.log(state, "STATE")
   return (
     <div
       style={{
@@ -15,12 +17,13 @@ export default function InputAmount({ onSubmit }) {
         padding: 16,
       }}
     >
-      <h4>Digite o Valor</h4>
+      <TemplateTitle>Digite o valor da recarga</TemplateTitle>
       <Input
         onChange={(e) => {
           setValue(e.target.value);
         }}
-        placeholder={"Valor"}
+        placeholder={"R$ 0,00"}
+        value={state?.amount}
       />
       <Button onClick={() => onSubmit(value)}>Continuar</Button>
     </div>

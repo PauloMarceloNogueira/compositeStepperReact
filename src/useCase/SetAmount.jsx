@@ -3,7 +3,6 @@ import InputAmount from "../Templates/InputAmount";
 import Button from "../Component/Button";
 
 function SetAmount(props) {
-  console.log(props, "PROPS");
   if (props.transactionState.phone === "999732158") {
     return (
       <div>
@@ -19,7 +18,7 @@ function SetAmount(props) {
     });
     props.handleClick();
   };
-  return <InputAmount onSubmit={onSubmit} />;
+  return <InputAmount onSubmit={onSubmit} state={props.transactionState} />;
 }
 
 export default SetAmount;
