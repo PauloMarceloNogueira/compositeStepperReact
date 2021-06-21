@@ -4,6 +4,7 @@ import Stepper from "../../Templates/Stepper";
 // Import useCases
 import InputLogin from '../../useCase/InputLogin/InputLogin';
 import InputStore from '../../useCase/InputStore/InputStore';
+import ValidateCPF from '../../useCase/ValidateCPF/ValidateCPF';
 export default function UsersLoginDomain() {
   const [transactionState, setTransactionState] = useState({});
   return (
@@ -13,6 +14,12 @@ export default function UsersLoginDomain() {
         <Stepper.Step
           num={1}
           useCase={InputLogin}
+          setTransactionState={setTransactionState}
+          transactionState={transactionState}
+        /> 
+        <Stepper.Step
+          num={1}
+          useCase={ValidateCPF}
           setTransactionState={setTransactionState}
           transactionState={transactionState}
         /> 

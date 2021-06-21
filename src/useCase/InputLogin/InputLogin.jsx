@@ -16,10 +16,11 @@ function InputLogin(props) {
   }
   const onSubmit = () => {
     if (validateDocument()) {
-      history.push({
-        pathname: "/",
-        state: props.transactionState 
-      })
+      props.setTransactionState({...props.transactionState, document: value.document})
+      // history.push({
+      //   pathname: "/",
+      //   state: props.transactionState 
+      // })
     } else {
       props.handleClick();
     }

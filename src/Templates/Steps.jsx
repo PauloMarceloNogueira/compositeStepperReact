@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "../App.css";
 
 export const Step = (props) => {
-  console.log(props,  "Props");
   if (props) {
     return <div key={props?.num}>{props?.useCase(props)}</div>;
   }
