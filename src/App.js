@@ -1,23 +1,56 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Layout from "./Templates/Layout.jsx";
+import Button from "./Component/Button";
+import TransactionTemplate from "./Templates/TransactionTemplate";
+import "./App.css";
+import { Route, useHistory } from "react-router-dom";
 function App() {
+  let history = useHistory();
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+      <Layout>
+        <div
+          style={{
+            width: "50%",
+          }}
         >
-          Learn React
-        </a>
-      </header>
+          <Route exact path={"/"}>
+            <Button
+              onClick={() => {
+                history.push({
+                  pathname: "transaction",
+                  kind: "cellphone",
+                });
+              }}
+            >
+              Celular
+            </Button>
+            <Button
+              onClick={() => {
+                history.push({
+                  pathname: "transaction",
+                  kind: "tv",
+                });
+              }}
+            >
+              TV
+            </Button>
+            <Button
+              onClick={() => {
+                history.push({
+                  pathname: "transaction",
+                  kind: "pin",
+                });
+              }}
+            >
+              PIN
+            </Button>
+          </Route>
+
+          <Route path="/transaction">
+            <TransactionTemplate />
+          </Route>
+        </div>
+      </Layout>
     </div>
   );
 }
