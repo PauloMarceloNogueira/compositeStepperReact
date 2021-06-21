@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/compositeStepperReact/static/css/main.d1bdbdf3.chunk.css",
+    "main.js": "/compositeStepperReact/static/js/main.0832e83b.chunk.js",
+    "main.js.map": "/compositeStepperReact/static/js/main.0832e83b.chunk.js.map",
+    "runtime-main.js": "/compositeStepperReact/static/js/runtime-main.e3429a15.js",
+    "runtime-main.js.map": "/compositeStepperReact/static/js/runtime-main.e3429a15.js.map",
+    "static/js/2.84a56c46.chunk.js": "/compositeStepperReact/static/js/2.84a56c46.chunk.js",
+    "static/js/2.84a56c46.chunk.js.map": "/compositeStepperReact/static/js/2.84a56c46.chunk.js.map",
+    "static/js/3.e5d56eb5.chunk.js": "/compositeStepperReact/static/js/3.e5d56eb5.chunk.js",
+    "static/js/3.e5d56eb5.chunk.js.map": "/compositeStepperReact/static/js/3.e5d56eb5.chunk.js.map",
+    "index.html": "/compositeStepperReact/index.html",
+    "static/css/main.d1bdbdf3.chunk.css.map": "/compositeStepperReact/static/css/main.d1bdbdf3.chunk.css.map",
+    "static/js/2.84a56c46.chunk.js.LICENSE.txt": "/compositeStepperReact/static/js/2.84a56c46.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e3429a15.js",
+    "static/js/2.84a56c46.chunk.js",
+    "static/css/main.d1bdbdf3.chunk.css",
+    "static/js/main.0832e83b.chunk.js"
+  ]
+}
