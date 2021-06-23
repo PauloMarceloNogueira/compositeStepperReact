@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import "../../App.css";
 import Stepper from "../../Templates/Stepper";
 // Import useCases
-import GetDataProfileFromJWT from "../../useCase/GetDataProfileFromJWT/GetDataProfileFromJWT";
+import GetDataProfileFromJWT from "../../useCase/UpdateProfileUseCase/GetDataProfileFromJWT/GetDataProfileFromJWT";
 import UpdateProfileUseCase from "../../useCase/UpdateProfileUseCase/UpdateProfileUseCase";
-import UpdateLoginSuccess from "../../useCase/UpdateLoginSuccess/UpdateLoginSuccess";
+import UpdateLoginSuccess from "../../useCase/UpdateProfileUseCase/UpdateLoginSuccess/UpdateLoginSuccess";
 
 export default function UpdateProfile() {
   const [profileState, setProfileState] = useState({loading: true});

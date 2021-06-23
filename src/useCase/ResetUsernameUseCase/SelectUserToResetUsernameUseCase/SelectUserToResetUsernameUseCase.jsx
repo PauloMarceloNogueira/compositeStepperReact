@@ -1,6 +1,6 @@
 import React from "react";
 
-import SelectUserToResetUsernameTemplate from "../../Templates/SelectUserToResetUsernameTemplate/SelectUserToResetUsernameTemplate"
+import SelectUserToResetUsernameTemplate from "../../../Templates/SelectUserToResetUsernameTemplate/SelectUserToResetUsernameTemplate"
 function SelectUserToResetUsernameUseCase(props) {
   
   const onSubmit = (user) => {

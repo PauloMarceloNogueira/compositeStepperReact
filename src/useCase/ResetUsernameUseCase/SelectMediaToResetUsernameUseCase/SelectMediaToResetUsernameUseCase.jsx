@@ -1,5 +1,5 @@
 import React from "react";
-import SelectMediaToResetUsernameTemplate from "../../Templates/SelectMediaToResetUsernameTemplate/SelectMediaToResetUsernameTemplate"
+import SelectMediaToResetUsernameTemplate from "../../../Templates/SelectMediaToResetUsernameTemplate/SelectMediaToResetUsernameTemplate"
 function SelectMediaToResetUsernameUseCase(props) {
   console.log(props.resetUsernameState, 'props.resetUsernameState')
   const onSubmit = (data) => {

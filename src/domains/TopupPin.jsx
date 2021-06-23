@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "../App.css";
 import Stepper from "../Templates/Stepper";
-import SetAmount from "../useCase/SetAmount";
-import CheckoutConfirm from "../useCase/CheckoutConfirm";
+import SetAmount from "../useCase/InputsUseCase/InputAmount/SetAmount";
+import CheckoutConfirm from "../useCase/TopupsUseCase/CheckoutConfirm/CheckoutConfirm";
 export default function TopupPinDomain() {
   const [transactionState, setTransactionState] = useState({});
   return (

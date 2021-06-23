@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "../../App.css";
 import Stepper from "../../Templates/Stepper";
 // Import useCases
-import InputLogin from '../../useCase/InputLogin/InputLogin';
-import InputStore from '../../useCase/InputStore/InputStore';
+import InputLogin from '../../useCase/InputsUseCase/InputLogin/InputLogin';
+import InputStore from '../../useCase/InputsUseCase/InputStore/InputStore';
 import ValidateCPF from '../../useCase/ValidateCPF/ValidateCPF';
 export default function UsersLoginDomain() {
   const [transactionState, setTransactionState] = useState({});

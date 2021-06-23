@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import "../../App.css";
 import Stepper from "../../Templates/Stepper";
 // Import useCases
-import SetCellphone from "../../useCase/SetCellphone";
-import SetCardNumber from "../../useCase/SetCardNumber";
-import CheckoutConfirm from '../../useCase/CheckoutConfirm';
+import SetCellphone from "../../useCase/InputsUseCase/InputCellphone/SetCellphone";
+import SetCardNumber from "../../useCase/InputsUseCase/InputCardNumber/SetCardNumber";
+import CheckoutConfirm from '../../useCase/TopupsUseCase/CheckoutConfirm/CheckoutConfirm';
 export default function TopupTransport() {
   const [transactionState, setTransactionState] = useState({});
   return (

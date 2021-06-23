@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useHistory } from 'react-router-dom';
-import InputLoginTemplate from "../../Templates/InputLogin/InputLogin"
+import InputLoginTemplate from "../../../Templates/InputLogin/InputLogin"
 function InputStore(props) {
   const [value, setValue] = useState({
     store: ""

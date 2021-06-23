@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "../App.css";
 import Stepper from "../Templates/Stepper";
-import SetCellphone from "../useCase/SetCellphone";
-import SetAmount from "../useCase/SetAmount";
-import CheckoutConfirm from "../useCase/CheckoutConfirm";
+import SetCellphone from "../useCase/InputsUseCase/InputCellphone/SetCellphone";
+import SetAmount from "../useCase/InputsUseCase/InputAmount/SetAmount";
+import CheckoutConfirm from "../useCase/TopupsUseCase/CheckoutConfirm/CheckoutConfirm";
 export default function TopupCellphoneDomain() {
   const [transactionState, setTransactionState] = useState({});
   return (

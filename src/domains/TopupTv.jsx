@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "../App.css";
 import Stepper from "../Templates/Stepper";
-import SetAmount from "../useCase/SetAmount";
-import CheckoutConfirm from "../useCase/CheckoutConfirm";
-import SetCardNumber from '../useCase/SetCardNumber';
+import SetAmount from "../useCase/InputsUseCase/InputAmount/SetAmount";
+import CheckoutConfirm from "../useCase/TopupsUseCase/CheckoutConfirm/CheckoutConfirm";
+import SetCardNumber from '../useCase/InputsUseCase/InputCardNumber/SetCardNumber';
 export default function TopupTvDomain() {
   const [transactionState, setTransactionState] = useState({});
   return (

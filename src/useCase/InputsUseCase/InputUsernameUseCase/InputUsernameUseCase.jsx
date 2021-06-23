@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import InputDocumentTemplate from '../../Templates/InputDocumentTemplate/InputDocumentTemplate';
+import InputDocumentTemplate from '../../../Templates/InputDocumentTemplate/InputDocumentTemplate';
 
 function InputUsernameUseCase(props) {
   const [, setState] = useState("")

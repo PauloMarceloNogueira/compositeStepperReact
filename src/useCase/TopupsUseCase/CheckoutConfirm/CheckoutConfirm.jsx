@@ -1,6 +1,6 @@
 import React from "react";
 import { useHistory } from 'react-router-dom';
-import Checkout from "../Templates/Checkout";
+import Checkout from "../../../Templates/Checkout/Checkout";
 
 function CheckoutConfirm(props) {
   let history = useHistory();

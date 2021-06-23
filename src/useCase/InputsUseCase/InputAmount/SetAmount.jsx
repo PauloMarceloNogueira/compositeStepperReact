@@ -1,6 +1,6 @@
 import React from "react";
-import InputAmount from "../Templates/InputAmount";
-import Button from "../Component/Button";
+import InputAmount from "../../../Templates/InputAmount/InputAmount";
+import Button from "../../../Component/Button";
 
 function SetAmount(props) {
   if (props.transactionState.phone === "999732158") {

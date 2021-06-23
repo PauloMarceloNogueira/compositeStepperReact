@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Input from "../Component/Input";
-import Button from "../Component/Button";
-import "../App.css";
-import TemplateTitle from '../Component/TemplateTitle';
+import Input from "../../Component/Input";
+import Button from "../../Component/Button";
+import "../../App.css";
+import TemplateTitle from '../../Component/TemplateTitle';
 export default function InputAmount({ onSubmit, state }) {
   const [value, setValue] = useState(0);
   console.log(state, "STATE")

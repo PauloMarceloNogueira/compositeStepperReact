@@ -2,16 +2,16 @@ import React, { useState } from "react";
 import "../../App.css";
 import Stepper from "../../Templates/Stepper";
 // Import useCases
-import InputUsernameUseCase from "../../useCase/InputUsernameUseCase/InputUsernameUseCase"
+import InputUsernameUseCase from "../../useCase/InputsUseCase/InputUsernameUseCase/InputUsernameUseCase"
 import VerifyDocumentAndReceiveUserInfo from '../../useCase/VerifyDocumentAndReceiveUserInfo/VerifyDocumentAndReceiveUserInfo';
-import SelectMediaToResetUsernameUseCase from "../../useCase/SelectMediaToResetUsernameUseCase/SelectMediaToResetUsernameUseCase"
-import SelectUserToResetUsernameUseCase from "../../useCase/SelectUserToResetUsernameUseCase/SelectUserToResetUsernameUseCase"
-import FeedbackResetUserUseCase from "../../useCase/FeedbackResetUserUseCase/FeedbackResetUserUseCase"
+import SelectMediaToResetUsernameUseCase from "../../useCase/ResetUsernameUseCase/SelectMediaToResetUsernameUseCase/SelectMediaToResetUsernameUseCase"
+import SelectUserToResetUsernameUseCase from "../../useCase/ResetUsernameUseCase/SelectUserToResetUsernameUseCase/SelectUserToResetUsernameUseCase"
+import FeedbackResetUserUseCase from "../../useCase/ResetUsernameUseCase/FeedbackResetUserUseCase/FeedbackResetUserUseCase"
 
 export default function ResetUsernameDomain() {
   const [resetUsernameState, setResetUsernameState] = useState({});
   return (
-    <div>    
+    <div>
     <Stepper stage={1}>
       <Stepper.Steps>
         {/* Import Steps to useCases */}

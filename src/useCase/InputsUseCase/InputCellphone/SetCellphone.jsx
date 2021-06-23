@@ -1,5 +1,5 @@
 import React from "react";
-import InputCellphone from "../Templates/InputCellphone";
+import InputCellphone from "../../../Templates/InputCellphone/InputCellphone";
 // import { Container } from './styles';
 
 function SetCellphone(props) {

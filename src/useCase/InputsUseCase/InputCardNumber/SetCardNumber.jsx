@@ -1,5 +1,5 @@
 import React from "react";
-import InputCardNumber from '../Templates/InputCardNumber';
+import InputCardNumber from '../../../Templates/InputCardNumber/InputCardNumber';
 // import { Container } from './styles';
 
 function SetCardNumber(props) {

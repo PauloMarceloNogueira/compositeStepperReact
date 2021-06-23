@@ -3,12 +3,12 @@ const mockJWT = {username: "PauloMarcelo", document: "23346753859"}
 
 function GetDataProfileFromJWT(props) {
   
-  
+  const {setProfileState, handleClick} = props
   // RETURN AN TEMPLATE
   useEffect(() => {
-    props.setProfileState({...mockJWT, loading: false});
-    props.handleClick()
-  },[])
+    setProfileState({...mockJWT, loading: false});
+    handleClick()
+  },[setProfileState, handleClick])
   return (
    <div></div>
   );

@@ -1,11 +1,9 @@
-import React, { useState } from "react";
-import { useHistory } from 'react-router-dom';
-import FeedbackTemplate from '../../Templates/FeedbackTemplate/FeedbackTemplate';
+import React  from "react";
+
+import FeedbackTemplate from '../../../Templates/FeedbackTemplate/FeedbackTemplate';
 
 function FeedbackResetUserUseCase(props) {
-  const [state, setState] = useState({})
   
-  let history = useHistory();
   const onSubmit = () => {
     props.handleReset()
   };

@@ -1,9 +1,9 @@
 import React from "react";
 
-import Button from "../Component/Button";
-import "../App.css";
-import TemplateTitle from '../Component/TemplateTitle';
-import GhostButton from "../Component/GhostButton"
+import Button from "../../Component/Button";
+import "../../App.css";
+import TemplateTitle from '../../Component/TemplateTitle';
+import GhostButton from "../../Component/GhostButton"
 export default function Checkout({
   phone,
   amount,
