@@ -1,11 +1,27 @@
-# Getting Started with Create React App
+# Composite Stepper React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+this project was created to study and test a new architecture to React Native Projects
+## Inspirations
 
-## Available Scripts
+Composite Pattern, Chain Pattern, DDD, and Clean Architecture.
+This project was inspired by the book "pro javascript design patterns" written by Ross Harmes and Dustin Diaz
 
-In the project directory, you can run:
+## Structure
+### Domains
+ Business Domains. The most important rules to your business.
+ They have a mission to chaining multiple use cases
+ One Domain can have multiple use cases (and one use case can be present in multiple Domains)
 
+### UseCases
+  Use Cases are independent codes, with a single and unique responsibility. 
+  These can be simple and generic rules such as validators or more complex use cases, such verify if a user has a specific field on the database layer.
+
+### Template
+  The View layer. The Template is a generic page or screen. This layer is called the Presentational component, and they haven't any logic or rule.
+  Their events (click, press...) are received by props from the use cases, this way, the Templates are more flexible as can be
+
+### Infra
+  This Layer is responsible for external tools or technologies. You can use it to connected your project an external database, or create a new layer (inside infra) to consuming an external APIs
 ### `yarn start`
 
 Runs the app in the development mode.\
@@ -38,33 +54,3 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
