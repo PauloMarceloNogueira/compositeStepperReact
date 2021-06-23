@@ -12,8 +12,7 @@ class Steps extends Component {
   render() {
     const { stage } = this.props;
     const childrenProps = React.Children.map(this.props.children, (child) => {
-      if (stage === child.props.num)
-        return React.cloneElement(child, this.props);
+      if (stage === child.props.num) return React.cloneElement(child, this.props);      
     });
     return (
       <div>

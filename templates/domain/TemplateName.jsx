@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "../App.css";
-import Stepper from "../Templates/Stepper";
+import "../../App.css";
+import Stepper from "../../Templates/Stepper";
 // Import useCases
-import SetCellphone from "../useCase/SetCellphone";
+import SetCellphone from "../../useCase/SetCellphone";
 
 export default function TemplateName() {
   const [transactionState, setTransactionState] = useState({});

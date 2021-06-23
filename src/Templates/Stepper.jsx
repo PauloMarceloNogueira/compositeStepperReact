@@ -21,6 +21,10 @@ class Stepper extends Component {
   setNum = (val) => {
     this.setState({ stage: val });
   };
+
+  handleReset = () => {
+    this.setState({stage: 1})
+  }
   render() {
     const { stage } = this.state;
     const children = React.Children.map(this.props.children, (child) => {
@@ -29,6 +33,7 @@ class Stepper extends Component {
         handleClick: this.handleClick,
         handleBack: this.handleBack,
         setNum: this.setNum,
+        handleReset: this.handleReset
       });
     });
     return <div>{children}</div>;
